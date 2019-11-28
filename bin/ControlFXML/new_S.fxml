@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControlFXML.new_SC">
+   <children>
+      <JFXTextField fx:id="TFsondage" layoutX="190.0" layoutY="31.0" maxWidth="396.0" minWidth="317.0" prefHeight="31.0" prefWidth="396.0" />
+      <JFXListView fx:id="LVChoix" layoutY="134.0" onMouseClicked="#setVisible" prefHeight="219.0" prefWidth="600.0" />
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="47.0" prefWidth="172.0" text="nouveau Sondage">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="80.0" prefHeight="31.0" prefWidth="116.0" text="ajouter choix">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="TFchoix" layoutX="190.0" layoutY="80.0" maxWidth="396.0" minWidth="185.0" onAction="#ajouterItem" prefHeight="31.0" prefWidth="185.0" />
+      <JFXButton fx:id="Bsupp" layoutX="427.0" layoutY="361.0" onAction="#suppItem" prefHeight="25.0" prefWidth="126.0" text="supprimer" visible="false" />
+      <JFXButton layoutX="56.0" layoutY="361.0" onMouseClicked="#ajouterSondage" prefHeight="25.0" prefWidth="126.0" text="Ajouter Sondage" />
+   </children>
+</AnchorPane>

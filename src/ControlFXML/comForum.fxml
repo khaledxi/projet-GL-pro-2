@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControlFXML.comController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <HBox prefWidth="600.0">
+               <children>
+                  <MaterialDesignIconView fill="#04ff00" glyphName="COMMENT_PROCESSING_OUTLINE" size="80" />
+                  <Label fx:id="question" alignment="TOP_LEFT" minWidth="80.0" prefWidth="520.0" text="test" wrapText="true">
+                     <font>
+                        <Font name="Arial Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <JFXListView fx:id="listCom" prefHeight="278.0" prefWidth="600.0" />
+            <HBox prefWidth="600.0">
+               <children>
+                  <FontAwesomeIconView fill="#0d99ff" glyphName="COMMENT" size="30" wrappingWidth="33.0">
+                     <HBox.margin>
+                        <Insets left="5.0" top="5.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <JFXTextField fx:id="com" focusColor="#0d99ff" maxWidth="570.0" minWidth="561.0" onAction="#commenter" prefHeight="37.0" prefWidth="561.0" unFocusColor="#0d99ff">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="593.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControlFXML.SondageC">
+   <children>
+      <VBox prefHeight="593.0" prefWidth="675.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefWidth="675.0">
+               <children>
+                  <JFXTextField fx:id="TFrecherche" maxWidth="530.0" minWidth="394.0" onAction="#recherch" prefHeight="40.0" prefWidth="530.0" promptText="Recherch">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton onAction="#ajouterS" prefHeight="40.0" prefWidth="137.0" text="Ajouter">
+                     <font>
+                        <Font name="Candara Bold Italic" size="22.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <JFXListView fx:id="LVsondages" prefHeight="547.0" prefWidth="675.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
